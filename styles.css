@@ -1,0 +1,95 @@
+body {
+    padding: 25px;
+    height: 100vh;
+    background: linear-gradient(-45deg, pink, violet, blue, turquoise, green, yellow);
+    background-size: 400% 400%;
+    animation: bg 7s ease infinite;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+.title, #title {
+    color: #fff;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    font-weight: bold;
+    animation: blink 0.75s step-end infinite;
+}
+
+#content{
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    font-weight: bold;
+    animation: fadeIn 2s 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+input[type="text"],
+input[type="submit"] {
+    color: white;
+    font-size: 20px;
+    font-family: 'VT323', monospace;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#egg{
+  font-size: 50px;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+
+
+
