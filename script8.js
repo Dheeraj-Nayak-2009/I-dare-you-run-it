@@ -6,7 +6,7 @@ document.getElementById('eggForm').addEventListener('submit', function(event) {
     if (response === 'Make an omelette. \uD83C\uDF73') { // Unicode for 🍳
         this.action = 'index9.html';
     } else if (response === 'Hatch it. \uD83D\uDC23') { // Unicode for 🐣
-        this.action = 'index10.html';
+        this.action = 'index11.html';
     }
 
     this.submit(); // Submit the form with the new action
